@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play GMI Remix 2</title>
+    <style>
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #121212; 
+            margin: 0; 
+        }
+        button { 
+            width: 150px; 
+            height: 150px; 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 50%; 
+            font-size: 36px; 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            transition: 0.3s; 
+        }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <button onclick="playAudio()">▶</button>
+    <audio id="audio" src="audio.mp3"></audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
